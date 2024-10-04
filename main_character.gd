@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+#Adding Comment to Be Able to See Changess
 var SPEED = 20
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
