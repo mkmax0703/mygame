@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpey68msp7xjo"]
+
+[ext_resource type="Texture2D" uid="uid://b4wo7xpaosvvm" path="res://CasinoWorker.png" id="1_xja6i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ef7mm"]
+radius = 99.0
+height = 262.0
+
+[node name="CasinoWorker" type="CharacterBody2D"]
+
+[node name="CasinoWorker" type="Sprite2D" parent="."]
+position = Vector2(120, 140)
+scale = Vector2(1.1875, 1.17)
+texture = ExtResource("1_xja6i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(116, 162)
+shape = SubResource("CapsuleShape2D_ef7mm")

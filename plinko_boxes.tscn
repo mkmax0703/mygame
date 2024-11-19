@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2j2ix18iig7e"]
+
+[ext_resource type="Texture2D" uid="uid://dirtx1x1wvb71" path="res://Plinko boxes.png" id="1_utd0f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_syvt8"]
+size = Vector2(87, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u7bpx"]
+size = Vector2(86, 50)
+
+[node name="Plinko Boxes" type="Node2D"]
+
+[node name="PlinkoBoxes" type="Sprite2D" parent="."]
+texture = ExtResource("1_utd0f")
+
+[node name="0_2" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="0_2 Collision" type="CollisionShape2D" parent="PlinkoBoxes/0_2"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_syvt8")
+
+[node name="0_3L" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="0_3L Collision" type="CollisionShape2D" parent="PlinkoBoxes/0_3L"]
+position = Vector2(-89.5, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="0_9L" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="0_9L Collision" type="CollisionShape2D" parent="PlinkoBoxes/0_9L"]
+position = Vector2(-179.5, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="3L" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="3L Collision" type="CollisionShape2D" parent="PlinkoBoxes/3L"]
+position = Vector2(-269.5, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="10L" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="10L Collision" type="CollisionShape2D" parent="PlinkoBoxes/10L"]
+position = Vector2(-359.5, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="76L" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="76L Collision" type="CollisionShape2D" parent="PlinkoBoxes/76L"]
+position = Vector2(-449.25, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="0_3R" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="0_3R Collision" type="CollisionShape2D" parent="PlinkoBoxes/0_3R"]
+position = Vector2(90.5, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="0_9R" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="0_9R Collision" type="CollisionShape2D" parent="PlinkoBoxes/0_9R"]
+position = Vector2(180.5, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="3R" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="3R Collision" type="CollisionShape2D" parent="PlinkoBoxes/3R"]
+position = Vector2(270.5, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="10R" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="10R Collision" type="CollisionShape2D" parent="PlinkoBoxes/10R"]
+position = Vector2(360.5, 0)
+shape = SubResource("RectangleShape2D_u7bpx")
+
+[node name="76R" type="Area2D" parent="PlinkoBoxes"]
+
+[node name="76R Collision" type="CollisionShape2D" parent="PlinkoBoxes/76R"]
+position = Vector2(450, 0)
+shape = SubResource("RectangleShape2D_u7bpx")

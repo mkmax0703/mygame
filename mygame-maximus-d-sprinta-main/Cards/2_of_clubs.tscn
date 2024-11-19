@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://5ri8n41tc515"]
+
+[ext_resource type="Texture2D" uid="uid://fq5yykuh0loe" path="res://Cards/Card_pngs/2_of_clubs.png" id="1_g166c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pncdl"]
+size = Vector2(498, 723)
+
+[node name="2 of clubs" type="StaticBody2D"]
+
+[node name="2OfClubs" type="Sprite2D" parent="."]
+position = Vector2(1, -1)
+texture = ExtResource("1_g166c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_pncdl")

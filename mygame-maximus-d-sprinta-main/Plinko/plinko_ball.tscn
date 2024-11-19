@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxru5pprxpu50"]
+
+[ext_resource type="Texture2D" uid="uid://colws3iom73vv" path="res://Plinko/Plinko pngs/Plinko Ball.png" id="1_2hbvu"]
+[ext_resource type="Script" path="res://Plinko_ball.gd" id="1_xw2l7"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_xcg2u"]
+friction = 0.2
+bounce = 0.4
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_urmly"]
+radius = 202.01
+
+[node name="Plinko Ball" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_xcg2u")
+script = ExtResource("1_xw2l7")
+
+[node name="PlinkoBall" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+texture = ExtResource("1_2hbvu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+use_parent_material = true
+shape = SubResource("CircleShape2D_urmly")

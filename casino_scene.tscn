@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://bngdh1by2gk3s"]
+
+[ext_resource type="PackedScene" uid="uid://c4sqjcd0oqidl" path="res://casino_map.tscn" id="1_pyfkf"]
+[ext_resource type="Script" path="res://casino_scene.gd" id="1_r0xxr"]
+[ext_resource type="PackedScene" uid="uid://dgdmw77oxqo6r" path="res://main_character.tscn" id="2_jt31a"]
+[ext_resource type="Script" path="res://collision_shape_2d.gd" id="4_n71ma"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_slnq3"]
+size = Vector2(62, 20)
+
+[node name="casino_scene" type="Node2D"]
+script = ExtResource("1_r0xxr")
+
+[node name="CasinoMap" parent="." instance=ExtResource("1_pyfkf")]
+position = Vector2(0, 1)
+
+[node name="Main Character" parent="." instance=ExtResource("2_jt31a")]
+position = Vector2(3, 2)
+scale = Vector2(0.15, 0.15)
+
+[node name="Camera2D" type="Camera2D" parent="Main Character"]
+scale = Vector2(0.2, 0.2)
+zoom = Vector2(2, 2)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(128, 139)
+shape = SubResource("RectangleShape2D_slnq3")
+script = ExtResource("4_n71ma")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

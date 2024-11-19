@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://iv08yxpfqute"]
+
+[ext_resource type="Texture2D" uid="uid://dsbu48plidae7" path="res://Plinko/Plinko pngs/Plinko Pole.png" id="1_3jrt6"]
+[ext_resource type="Texture2D" uid="uid://colws3iom73vv" path="res://Plinko/Plinko pngs/Plinko Ball.png" id="2_vo6mx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PlinkoPole" type="Sprite2D" parent="."]
+position = Vector2(1524, 785)
+texture = ExtResource("1_3jrt6")
+
+[node name="PlinkoBall" type="Sprite2D" parent="."]
+position = Vector2(1272, 437)
+texture = ExtResource("2_vo6mx")
+
+[node name="PlinkoPole2" type="Sprite2D" parent="."]
+position = Vector2(1895, 1117)
+texture = ExtResource("1_3jrt6")
+
+[node name="PlinkoPole3" type="Sprite2D" parent="."]
+position = Vector2(1153, 1122)
+texture = ExtResource("1_3jrt6")

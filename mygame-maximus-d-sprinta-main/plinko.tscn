@@ -1,0 +1,249 @@
+[gd_scene load_steps=5 format=3 uid="uid://bj65h2vg001e8"]
+
+[ext_resource type="PackedScene" uid="uid://cxru5pprxpu50" path="res://Plinko/plinko_ball.tscn" id="1_xe34f"]
+[ext_resource type="PackedScene" uid="uid://scirhhd4lp00" path="res://Plinko/plinko_pole.tscn" id="2_hu5a7"]
+[ext_resource type="PackedScene" uid="uid://b2j2ix18iig7e" path="res://plinko_boxes.tscn" id="3_gn0m1"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_88boh"]
+
+[node name="Plinko" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 3000)
+zoom = Vector2(0.08, 0.08)
+
+[node name="Plinko Ball" parent="." instance=ExtResource("1_xe34f")]
+position = Vector2(-186, -1619)
+physics_material_override = SubResource("PhysicsMaterial_88boh")
+
+[node name="Plinko Pole" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(0, 400)
+
+[node name="Plinko Pole2" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-550, 400)
+
+[node name="Plinko Ball2" parent="." instance=ExtResource("1_xe34f")]
+position = Vector2(-315, 707)
+
+[node name="Plinko Pole3" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(550, 400)
+
+[node name="Plinko Pole4" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-275, 1060)
+
+[node name="Plinko Pole5" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(275, 1060)
+
+[node name="Plinko Pole6" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-825, 1060)
+
+[node name="Plinko Pole7" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(825, 1060)
+
+[node name="Plinko Pole8" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(0, 1720)
+
+[node name="Plinko Pole9" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-550, 1720)
+
+[node name="Plinko Pole10" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1100, 1720)
+
+[node name="Plinko Pole11" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(550, 1720)
+
+[node name="Plinko Pole12" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1100, 1720)
+
+[node name="Plinko Pole13" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1, 3040)
+
+[node name="Plinko Pole14" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-275, 2380)
+
+[node name="Plinko Pole15" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-825, 2380)
+
+[node name="Plinko Pole16" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1, 4360)
+
+[node name="Plinko Pole17" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1, 5680)
+
+[node name="Plinko Pole18" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-550, 3040)
+
+[node name="Plinko Pole19" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1100, 3040)
+
+[node name="Plinko Pole20" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(550, 3040)
+
+[node name="Plinko Pole21" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1100, 3040)
+
+[node name="Plinko Pole22" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-550, 4360)
+
+[node name="Plinko Pole23" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1100, 4360)
+
+[node name="Plinko Pole24" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(550, 4360)
+
+[node name="Plinko Pole25" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1100, 4360)
+
+[node name="Plinko Pole26" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-550, 5680)
+
+[node name="Plinko Pole27" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1100, 5680)
+
+[node name="Plinko Pole28" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(550, 5680)
+
+[node name="Plinko Pole29" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1100, 5680)
+
+[node name="Plinko Pole30" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(275, 2380)
+
+[node name="Plinko Pole31" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(825, 2380)
+
+[node name="Plinko Pole32" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1375, 2380)
+
+[node name="Plinko Pole33" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1375, 2380)
+
+[node name="Plinko Pole34" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1650, 3040)
+
+[node name="Plinko Pole35" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1650, 3040)
+
+[node name="Plinko Pole36" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1650, 4360)
+
+[node name="Plinko Pole37" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1650, 4360)
+
+[node name="Plinko Pole38" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1650, 5680)
+
+[node name="Plinko Pole39" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1650, 5680)
+
+[node name="Plinko Pole40" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-275, 3700)
+
+[node name="Plinko Pole41" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-825, 3700)
+
+[node name="Plinko Pole42" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(275, 3700)
+
+[node name="Plinko Pole43" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(825, 3700)
+
+[node name="Plinko Pole44" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1375, 3700)
+
+[node name="Plinko Pole45" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1375, 3700)
+
+[node name="Plinko Pole46" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-275, 5020)
+
+[node name="Plinko Pole47" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-825, 5020)
+
+[node name="Plinko Pole48" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(275, 5020)
+
+[node name="Plinko Pole49" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(825, 5020)
+
+[node name="Plinko Pole50" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1375, 5020)
+
+[node name="Plinko Pole51" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1375, 5020)
+
+[node name="Plinko Pole52" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1925, 3700)
+
+[node name="Plinko Pole53" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1925, 3700)
+
+[node name="Plinko Pole54" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-2200, 4360)
+
+[node name="Plinko Pole55" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(2200, 4360)
+
+[node name="Plinko Pole56" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1925, 5020)
+
+[node name="Plinko Pole57" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1925, 5020)
+
+[node name="Plinko Pole58" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-2475, 5020)
+
+[node name="Plinko Pole59" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(2475, 5020)
+
+[node name="Plinko Pole60" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-2200, 5680)
+
+[node name="Plinko Pole61" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-2750, 5680)
+
+[node name="Plinko Pole62" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(2200, 5680)
+
+[node name="Plinko Pole63" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(2750, 5680)
+
+[node name="Plinko Pole64" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-275, 6340)
+
+[node name="Plinko Pole65" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-825, 6340)
+
+[node name="Plinko Pole66" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(275, 6340)
+
+[node name="Plinko Pole67" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(825, 6340)
+
+[node name="Plinko Pole68" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1375, 6340)
+
+[node name="Plinko Pole69" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1375, 6340)
+
+[node name="Plinko Pole70" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-1925, 6340)
+
+[node name="Plinko Pole71" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(1925, 6340)
+
+[node name="Plinko Pole72" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-2475, 6340)
+
+[node name="Plinko Pole73" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(2475, 6340)
+
+[node name="Plinko Pole74" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(-3025, 6340)
+
+[node name="Plinko Pole75" parent="." instance=ExtResource("2_hu5a7")]
+position = Vector2(3025, 6340)
+
+[node name="Plinko Boxes" parent="." instance=ExtResource("3_gn0m1")]
+position = Vector2(-0.999998, 7034)
+scale = Vector2(6.1, 6.1)
